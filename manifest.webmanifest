@@ -1,0 +1,17 @@
+{
+  "id": "/walisantriFMart/",
+  "name": "FMart Wali Santri",
+  "short_name": "FMart Wali",
+  "description": "Layanan FMart untuk Wali Santri.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "/walisantriFMart/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7eff9",
+  "theme_color": "#800080",
+  "icons": [
+    {"src":"https://appfathanmubina.github.io/fmart/icons/fmart-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"https://appfathanmubina.github.io/fmart/icons/fmart-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}
