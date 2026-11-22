@@ -1,5 +1,14 @@
+// OneSignal Web SDK worker is hosted inside this PWA's own scope.
+// Keep this import in the same worker registered by the PWA shell.
+try {
+  importScripts('https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js');
+  self.FMART_ONESIGNAL_SW_READY = true;
+} catch (error) {
+  console.warn('FMart Wali OneSignal service worker SDK could not be loaded:', error);
+}
+
 // Service worker khusus PWA Wali Santri.
-// OneSignal tetap menggunakan worker lama di /fmart/service-worker.js.
+// OneSignal sekarang menggunakan worker lokal pada scope PWA Wali.
 const CACHE_PREFIX='fmart-wali-';
 const CACHE_NAME='fmart-wali-shell-v1';
 const SHELL=['./','./index.html','./manifest.webmanifest','./config.js'];
