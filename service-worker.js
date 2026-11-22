@@ -8,7 +8,7 @@ try {
 }
 
 // Service worker khusus PWA Wali Santri.
-// OneSignal tetap menggunakan worker lama di /fmart/service-worker.js.
+// OneSignal sekarang menggunakan worker lokal pada scope PWA Wali.
 const CACHE_PREFIX='fmart-wali-';
 const CACHE_NAME='fmart-wali-shell-v1';
 const SHELL=['./','./index.html','./manifest.webmanifest','./config.js'];
